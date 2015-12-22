@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Homepage</title>
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Comfortaa:400,700' rel='stylesheet' type='text/css'>
+	</head>
+	
+        
+        <div class="welcome">
+		  <div class="container">
+            
+              <div id="fsvs-body">
+                  <body class="active-slide-2 active-nth-slide-2" style>
+                  <div id="fsvs-body" style=transition: all 1s; transform: translate3d(0px, -100%, 0px);
+                       </div>
+			<div class="slide">
+                <div class="fidarelogohomepage"><img src="images/Fidare%20Capital%20Logo-03%20homepage.png"></div>
+
+			</header>
+			<section class="content bgcolor-1">
+                <div class="header">2/3 of all capital is human</div>
+				
+                <div class="descriptionhomepage">optimize your portfolio for your career</div>
+               
+                <div class="startbutton">
+                <A HREF="index.html"><IMG SRC="buttons/startbutton.png" alt="startbutton"></a>
+                </div>
+                    </div>
+                
+         <section class="scroll2">      
+			<div class="slide">
+                <div class="fidaregraph"><img src="images/homepagegraph.png"></div>
+                 <div class="startbutton">
+                <A HREF="index.html"><IMG SRC="buttons/startbutton.png" alt="startbutton"></a>
+                </div>
+                 </section>   
+                
+                
+                <section class="scroll3"> 
+			<div class="slide">
+                 <div class="portfolioview"><img src="images/homepageportview-01.png"></div>
+                 <div class="startbutton">
+                <A HREF="index.html"><IMG SRC="buttons/startbutton.png" alt="startbutton"></a>
+                </div>
+         </section>               
+                
+             
+                
+		</div>                
+		</script>
+    
+      </body>
+                
+</html>
