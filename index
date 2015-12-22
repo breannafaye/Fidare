@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>First Page</title>
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+        <link href='https://www.google.com/fonts#UsePlace:use/Collection:Comfortaa:400,700' rel='stylesheet' type='text/css'>
+        
+
+	</head>
+	<body>
+        
+        
+        <div class="welcome">
+		  <div class="container">
+            
+                <div class="fidarelogo"><img src="images/Fidare Capital Logo-06_JUSTICONsmall.png"></div>
+
+            
+              
+			</header>
+			<section class="content bgcolor-1">
+                <div class="description">Let's get acquainted.</div>
+				
+                
+                <span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-1" />
+					<label class="input__label input__label--haruki" for="input-1">
+						<span class="input__label-content input__label-content--haruki">First Name</span>
+					</label>
+				</span>
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-2" />
+					<label class="input__label input__label--haruki" for="input-2">
+						<span class="input__label-content input__label-content--haruki">Last Name</span>
+					</label>
+				</span>
+				<span class="input input--haruki">
+					<input class="input__field input__field--haruki" type="text" id="input-3" />
+					<label class="input__label input__label--haruki" for="input-3">
+						<span class="input__label-content input__label-content--haruki">Email</span>
+					</label>
+				</span>
+			</section>
+			
+              
+            
+            
+		</div>
+        
+        <!-- /container JAVASCRIPT -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+        
+    
+          
+         <div class="fidareleftarrow"><A HREF="homepage.html"><IMG SRC="buttons/fidare_buttons-09.png" alt="fidarerightarrow"></a>
+        </div>
+         <div class="fidarerightarrow">
+             <A HREF="page2.html"><IMG SRC="buttons/fidare_buttons-08.png" alt="fidarerightarrow"></a>
+        </div>
+           
+             <div class="progressbarbuttons">
+                 <A HREF="index.html"><IMG SRC="buttons/fidare_buttons_1.png" alt="buttonpage1"></a>
+                 <A HREF="page2.html"><IMG SRC="buttons/fidare_buttons_2.png" alt="buttonpage2"></a>
+                 <A HREF="page3-new.html"><IMG SRC="buttons/fidare_buttons_2.png" alt="buttonpage5"></a>        
+             </div>
+    
+	</body>
+</html>
