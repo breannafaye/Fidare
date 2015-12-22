@@ -1,0 +1,535 @@
+/* ||-.-!code */
+
+
+.container1 {
+    position: relative;
+    height: 30px;
+    width: 800px;
+    padding: 10px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto 5em;
+    align-items: center;
+}
+
+
+.fidarelogo {
+    position: relative -2em;
+    height: 30px;
+    width: 700px;
+    padding: 10px;
+    float: center;
+    margin-left: auto -10em;
+}
+
+.description { display:inline-block; 
+  font-family: 'Abel', serif;
+  font-size: 20px;
+  color: #999999;
+  width: 200px; align-items: center;
+  height: 20px;
+  padding: 5px;
+  margin-right: auto 2em;
+    
+}
+.description-name { display:inline-block; 
+  font-family: 'Abel', serif;
+  font-size: 20px;
+  color: #4A6CAF;
+  width: 50px; align-items: center;
+  height: 20px;
+  padding: 5px;
+  margin: auto 120px;
+    
+}
+
+.portfoliooptimzation {
+  background-color: #FFFFFF;
+  color: #999999;
+  font-family: 'abel';
+  font-weight: bold;
+  text-align: center;
+  height: 200px;
+}
+
+
+
+.container2 {
+    position: relative;
+    height: 0px;
+    width: 900px;
+    padding: 10px;
+    float: center;
+    margin: auto;
+}
+
+
+/*- .investbutton { display:inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    margin: auto;
+    align-items: center; 
+}*/
+
+
+.slidersveryhigh { 
+    position: relative;
+    height: 100px;
+    width: 10px;
+    margin: auto; 
+    align-items: center; 
+}
+
+
+.graphveryhigh {  
+    position: relative;
+    height: 100px;
+    width: 10px;
+    margin: auto; 
+    align-items: center; 
+}
+
+
+
+
+/*slider*/
+
+
+.slider-investment {
+    display:inline-block;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    padding: 200px;
+    margin: auto;
+    align-items: center;
+}
+
+
+.slider-risk {
+    display:inline-block;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    padding: 200px;
+    margin: auto;
+    align-items: center;
+}
+
+function updateSlider(slideAmount) {
+
+}
+
+
+
+var display = document.getElementById("chosen");
+
+display.innerHTML=slideAmount;
+
+
+
+/* Hides the original slider so custom slider can override */
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 100%;
+}
+
+
+/* Hides the original slider thumb */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+/* Removes blue border */
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/* custom image slider button 
+
+CGRect frame = CGRectMake(0.0, 219.0, 323.0, 20.0);
+UISlider *myslider = [[UISlider alloc] initWithFrame:frame];
+
+[myslider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
+[myslider setBackgroundColor:[UIColor clearColor]];
+[myslider setThumbImage: [UIImage imageNamed:@"buttons/fidare_buttons_1.png"] forState:UIControlStateNormal];
+
+myslider.minimumValue = 0.0;
+myslider.maximumValue = 100000;
+myslider.continuous = YES;
+myslider.value = 10000.0;
+[self.view addSubview:myslider];
+
+
+
+[[UISlider appearance] setThumbImage:[UIImage imageNamed:@"buttons/fidare_buttons_1.png"] forState:UIControlStateNormal];
+[slider setMinimumTrackImage:[[UIImage imageNamed:@"buttons/fidare_buttons_1.png"] stretchableImageWithLeftCapWidth:0.3 topCapHeight:0.0] forState:UIControlStateNormal];
+[slider setMaximumTrackImage:[[UIImage imageNamed:@"buttons/fidare_buttons_1.png"] stretchableImageWithLeftCapWidth:0.3 topCapHeight:0.0] forState:UIControlStateNormal];
+
+*/
+
+
+
+/* styling for slider button */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #4A6CAF;
+  height: 12px;
+  width: 12px;
+  border-radius: 5px;
+  background: #4A6CAF;
+  cursor: pointer;
+  margin-top: 0px;
+  box-shadow: 0px 0px 1px #4A6CAF, 0px 0px 1px #4A6CAF;
+}
+
+/* for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #4A6CAF, 0px 0px 1px #4A6CAF;
+  border: 1px solid #4A6CAF;
+  height: 12px;
+  width: 12px;
+  border-radius: 5px;
+  background: #4A6CAF;
+  cursor: pointer;
+}
+
+/* for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 1px #4A6CAF, 0px 0px 1px #4A6CAF;
+  border: 1px solid #4A6CAF;
+  height: 12px;
+  width: 12px;
+  border-radius: 5px;
+  background: #4A6CAF;
+  cursor: pointer;
+}
+
+
+input[type='range'] {
+-webkit-appearance: none;
+padding-left:2px; padding-right:2px;
+width: 22%;
+height: 3px;
+-webkit-border-radius: 20px;
+background-image: -webkit-linear-gradient(#999999, #999999, #999999, #999999);
+transition: all 0.3s ease;
+margin: auto;
+}
+
+
+
+/* text/labels only */
+
+.rangevalue1 { display:inline-block;
+  text-align: center;
+  font:'Abel', sans-serif;
+  size: 22px;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #4A6CAF;
+}
+
+
+.rangevalue2 { display:inline-block;
+  text-align: center;
+  font:'Abel', sans-serif;
+  size: 22px;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #4A6CAF;
+}
+
+
+
+.slider-investment {
+  text-align: left;
+  font-family:'Abel', sans-serif;
+  size: 35px;
+  margin: auto;
+  margin-left: 60px;
+  padding: 10px;
+  width: 100%;
+  color: #7F7F7F;
+}
+
+
+.slider-risk {
+  text-align: left;
+  font-family:'Abel', sans-serif;
+  size: 35px;
+  margin: auto;
+  margin-left: 80px;
+  padding: 10px;
+  width: 100%;
+  color: #7F7F7F;
+}
+
+
+
+
+#hover {
+    color: darken($darkgreen, 10%);  
+}
+
+#active {
+    box-shadow: 0px 0px 1px darken($darkgreen, 15%);
+}
+
+
+
+
+
+
+
+
+
+
+
+@import "compass/css3";
+
+.snooze-custom-wrap {
+  display: block;
+  position: absolute; 
+  top: 100px; 
+  left: 100px; 
+  width: 1000px;
+  height: 150px;
+  padding: 0 40px 0 25px;
+}
+
+.snooze-custom-wrap .slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+}
+.snooze-custom-wrap .slider.slider-horizontal {
+  width: 348px;
+  height: 5px;
+  padding: 20px;
+}
+.snooze-custom-wrap .slider.slider-horizontal .slider-track {
+  height: 5px;
+  width: 100%;
+  margin-top: -5px;
+  top: 50%;
+  left: 0;
+}
+.snooze-custom-wrap .slider.slider-horizontal .slider-selection {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.snooze-custom-wrap .slider.slider-horizontal .slider-handle {
+  margin-left: -7px;
+  margin-top: -6px;
+}
+.snooze-custom-wrap .slider.slider-horizontal .slider-handle.triangle {
+  border-width: 0 10px 10px 10px;
+  width: 0;
+  height: 0;
+  border-bottom-color: #4A6CAF;
+  margin-top: 0;
+}
+.snooze-custom-wrap .slider input {
+  display: none;
+}
+.snooze-custom-wrap .slider .tooltip-inner {
+  white-space: nowrap;
+}
+.snooze-custom-wrap .slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border-radius: 4px;
+}
+.snooze-custom-wrap .slider-selection {
+  position: absolute;
+  background-color: #f5a623;
+  border-radius: 4px;
+  background-color: #4A6CAF;
+}
+.snooze-custom-wrap .slider-handle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #f5a623;
+  border: 0px solid transparent;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #4A6CAF;
+}
+.snooze-custom-wrap .slider-handle.round {
+  border-radius: 20px;
+}
+.snooze-custom-wrap .slider-handle.triangle {
+  background: transparent none;
+}
+.snooze-custom-wrap .tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 12px;
+  color: #a39ba3;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+
+.snooze-custom-wrap .tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.snooze-custom-wrap .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+.snooze-custom-wrap .tooltip-arrow {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.snooze-custom-wrap .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #000000;
+  border-width: 5px 5px 0;
+}
+
+.snooze-custom-wrap .slider-pips {
+  position: relative;
+}
+
+.snooze-custom-wrap .circle {
+  position: absolute;
+  right: -54px;
+  top: -13px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #5AB7FC;
+  border: 1px solid #5AB7FC;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  overflow: visible;
+}
+
+.snooze-custom-wrap .circle[disabled] {
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+}
+
+.snooze-custom-wrap .circle:before, .snooze-custom-wrap .circle:after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background: #fff;
+}
+.snooze-custom-wrap .circle:before {
+  top: 12px;
+  left: 3px;
+  width: 9px;
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(-130deg);
+}
+.snooze-custom-wrap .circle:after {
+  top: 10px;
+  left: 7px;
+  width: 14px;
+  -webkit-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
+.snooze-custom-wrap .circle .number {
+  color: transparent;
+}
+
+.snooze-custom-wrap .slider-pip-number {
+  position: absolute;
+  top: 4px;
+  display: inline-block;
+  width: 24px;
+  text-align: left;
+}
+
+.snooze-custom-wrap .slider-line {
+  background: #fff;
+  width: 2px;
+  height: 4px;
+  position: absolute;
+  top: -7px;
+  left: 27%;
+  cursor: pointer;
+}
+
+.snooze-custom-wrap .slider-number {
+  font-size: 12px;
+  color: #a39ba3;
+}
+
+
+
+
+
+.slider-pip-first {
+  left: 0px;
+}
+
+.slider-pip-first .slider {
+  left: 10000px;
+}
+
+.slider-pip-first.slider-pip-number {
+  /* text-align: left; */
+}
+
+.slider-pip-second {
+  left: 15000px;
+}
+
+.slider-pip-third {
+  left: 20000px;
+}
+
+.slider-pip-fouth {
+  left: 25000px;
+}
+
+.slider-pip-last {
+  left: 30000px;
+}
+
+.slider-pip-last .slider {
+  left: 100%;
+}
+
+
+
+
+
