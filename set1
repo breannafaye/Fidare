@@ -1,0 +1,310 @@
+/* ||-.-!code */
+
+
+.header {
+  position: relative;
+  font-family: 'Comfortaa', serif;
+  font-style: bold;
+  font-size: 40px;
+  width: 500px; align-items: center;
+  color: #4A6CAF;
+  padding: 5px;
+  margin: auto;
+}
+
+.description {
+  font-family: 'Abel', serif;
+  font-size: 30px;
+  color: #999999;
+  width: 375px; align-items: center;
+  padding: 5px;
+  margin: auto;
+    
+}
+
+.fidarelogo {
+    position: relative;
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+}
+
+/* homepage */
+
+.descriptionhomepage {
+  font-family: 'Abel', serif;
+  font-size: 30px;
+  color: #999999;
+  width: 450px; align-items: center;
+  padding: 5px;
+  margin: auto;
+}
+
+.fidarelogohomepage {
+    position: relative;
+    height: 300px;
+    width: 260px;
+    margin: auto;
+}
+
+.fidaregraph {
+    position: relative;
+    height: 300px;
+    width: 550px;
+    margin: auto;
+    align-items: center;
+}
+
+.portfolioview {
+    position: relative;
+    height: 440px;
+    width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+.fidarerightarrow {display: inline-block;
+    float:right;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    align-self: center;
+ }
+
+.fidareleftarrow {display: inline-block;
+    float:left;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    align-self: center;
+    
+}
+
+
+.startbutton {
+    position: relative;
+    height: 200px;
+    width: 100px;
+    padding: 30px;
+    margin: auto;
+    align-self: auto;
+}
+
+
+.progressbarbuttons {
+    position: relative;
+    height: 20px;
+    width: 200px; align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    align-self: auto;
+}
+
+
+
+
+
+/* the boxes */
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+/* makes everything not alligned */
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #FFFFFF;
+	color: #aaa;
+    font-size: 30px;
+	font-weight: bold;
+	font-family: "Abel", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+/* makes blue boxes appear? */
+.input__field:focus {
+	outline: none;
+}
+
+/* del - makes really tall lines */
+.input__label {
+	font-family: 'Abel', serif;
+    display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: #7F7F7F;
+	font-weight: bold;
+	font-size: 90%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+/* del - makes really small lines */
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1em 0;
+	width: 100%;
+}
+
+
+
+/* Individual styles */
+/* Haruki */
+
+.input--haruki {
+	margin: 4em 1em 1em;
+    height: 100px;
+}
+
+
+/* Haruki - Page 5 ONLY*/
+
+.input--haruki5 {
+	margin: 4em 1em 1em;
+}
+
+.input--haruki-5nobars {
+	margin: 4em 1em 1em;
+    font-family: 'Abel';
+    color: #999999;
+    font-size: 90%;
+    height: 100px;
+}
+
+
+/* grey text input */
+.input__field--haruki {
+	padding: 0.8em 0em;
+	width: 100%;
+	background: transparent;
+	color: #4A6CAF;
+	font-size: 1em;
+}
+
+/* sliding lines */
+.input__label--haruki {
+	position: absolute;
+	width: 90%;
+    height: 80%
+	text-align: left;
+	pointer-events: none;
+}
+
+/* makes smooth transition */
+.input__label-content--haruki {
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__label--haruki::before,
+.input__label--haruki::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 4px;
+	background: #4A6CAF;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+
+
+/* shifts text up upon typing input, but doesnt make it stay */
+.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+	-webkit-transform: translate3d(0, -90%, 0);
+	transform: translate3d(0, -90%, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::before,
+.input--filled .input__label--haruki::before {
+	-webkit-transform: translate3d(0, -0.5em, 0);
+	transform: translate3d(0, -0.5em, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::after,
+.input--filled .input__label--haruki::after {
+	-webkit-transform: translate3d(0, 0.5em, 0);
+	transform: translate3d(0, 0.5em, 0);
+}
+
+
+
+
+/* sliders */
+
+$(document).ready( function() {
+	// The HTML tag must have a class of fsvs
+	var fsvs = $.fn.fsvs({
+		speed : 1000
+	});
+});
+
+$(document).ready( function() {
+	var fsvs = $.fn.fsvs({
+		speed : 5000,
+		bodyID : 'fsvs-body',
+		selector : '> .slide',
+		mouseSwipeDisance : 40,
+		afterSlide : function(){},
+		beforeSlide : function(){},
+		endSlide : function(){},
+		mouseWheelEvents : true,
+		mouseDragEvents : true,
+		touchEvents : true,
+		arrowKeyEvents : true,
+		pagination : true,
+		nthClasses : false,
+		detectHash : true
+	});
+});
+
+
+$(document).ready( function() {
+	var slider = $.fn.fsvs({
+		...
+		endSlide : function(index) {
+			$('<div class="slide"><h2>Slide ' + (index+2) + '</h2></div>').appendTo( $('body') );
+			// reset the nth classes if you need it
+			slider.nthClasses(3);
+			// rebind pagination if you need it
+			slider.addPagination();
+		}
+		...
+	});
+});
+
